@@ -27,7 +27,7 @@ form {
 }
 
 .mainCard {
-  width: 40vw;
+  width: 60vw;
   border-radius: 25px;
   background-color: #fff;
   padding: 25px;
@@ -75,10 +75,12 @@ form {
   overflow-y: scroll;
   max-height: 60vh;
   height: 60vh;
+  overflow-x:hidden
+
 }
 
 .card {
-  width: 90%;
+  width: 88%;
   padding: 15px;
   box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
   display: flex;
@@ -129,4 +131,55 @@ form {
 .date {
   width: 100%;
   padding: 15px;
+}
+
+@media screen and (min-width:440px) and (max-width:840px) {
+  .inputForm{
+    max-width: 30%;
+
+  }
+  .btnCreate {
+    padding: 8px 11px;
+    
+  }
+
+  .tiempo{
+    max-width: 30%;
+  }
+
+  .card {
+    width: 84%;
+
+  }
+}
+
+@media screen and (max-width:500px) {
+  .inputForm{
+    width: 20%;
+
+  }
+  .btnCreate {
+    padding: 5px 7px;
+    
+  }
+
+  .tiempo{
+    max-width: 20%;
+  }
+
+  .card {
+    width: 80%;
+    margin: 5px;
+  }
+.cardsList {
+  margin: 5px;
+}
+span {
+    font-size: 12px;
+  }
+
+  .mainCard {
+    width: 80vw;
+
+  }
 }

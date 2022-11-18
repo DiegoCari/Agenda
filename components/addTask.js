@@ -67,9 +67,7 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
   taskLI.classList.add("card");
 
   // Creamos un 'span' para insertarle la fecha y agregarlo al HTML
-  const dateElement = document.createElement("SPAN");
-  dateElement.innerHTML = dateFormat;
-
+  
   // Creamos el elemento DIV
   const taskDIV = document.createElement("div");
 
@@ -98,7 +96,6 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
   // Agregamos al LI el DIV con el icono checkbox y el SPAN con su texto
   taskLI.appendChild(taskDIV);
   // Agregamos la fecha al elemento LI
-  taskLI.appendChild(dateElement);
   // Agregamos el boton de eliminar tarea al LI(este boton está por fuera del DIV)
   // Al mismo tiempo dentro de la función 'deleteIcon()', se llama al evento sobre el icono creado para eliminar la tarea; este evento llama en sus argumentos una funcion específica ( deleteTask() ) para poder eliminar el elemento padre del icono, que es el elemento LI que contiene al SPAN como al elemento I (icono de eliminación de tarea)
   taskLI.appendChild(deleteIcon(id));
